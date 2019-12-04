@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]>      <html class="lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang="ru"> <![endif]-->
+<!--[if IE 7]>         <html class="lt-ie10 lt-ie9 lt-ie8" lang="ru"> <![endif]-->
+<!--[if IE 8]>         <html class="lt-ie10 lt-ie9" lang="ru"> <![endif]-->
+<!--[if IE 9]>         <html class="lt-ie10" lang="ru"> <![endif]-->
+
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Web Wedding</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="libs/css/swiper.min.css">
+    <link rel="stylesheet" href="libs/css/jquery.formstyler.css">
+    <link href="libs/css/jquery.formstyler.theme.css" rel="stylesheet" />
+    <link href="libs/css/magnific-popup.css" rel="stylesheet" />
+    <link href="libs/css/simplelightbox.min.css" rel="stylesheet" />
+    <link href="libs/css/animate.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- <main> -->
+    <!-- Header -->
+
+    <div id="header" class="header">
+        <div class="flex_container">
+            <div class="col_w3 flex-center-flexstart">
+                <div id="menu-container">
+                    <div id="menu-wrapper">
+                        <div id="hamburger-menu" class="main-menu">
+                            <div class="menu-title">МЕНЮ</div>
+                            <div class="menu-button"><span></span><span></span><span></span></div>
+                        </div>
+                        <!-- hamburger-menu -->
+                    </div>
+                    <!-- menu-wrapper -->
+                    <ul class="menu-list accordion">
+                        <li id="nav1" class="toggle accordion-toggle">
+                            <span class="icon-plus"></span>
+                            <a class="menu-link" href="#">Menu1</a>
+                        </li>
+                        <!-- accordion-toggle -->
+                        <ul class="menu-submenu accordion-content">
+                            <li><a class="head" href="#">Submenu1</a></li>
+                            <li><a class="head" href="#">Submenu2</a></li>
+                            <li><a class="head" href="#">Submenu3</a></li>
+                        </ul>
+                        <!-- menu-submenu accordon-content-->
+                        <li id="nav2" class="toggle accordion-toggle">
+                            <span class="icon-plus"></span>
+                            <a class="menu-link" href="#">Menu2</a>
+                        </li>
+                        <!-- accordion-toggle -->
+                        <ul class="menu-submenu accordion-content">
+                            <li><a class="head" href="#">Submenu1</a></li>
+                            <li><a class="head" href="#">Submenu2</a></li>
+                        </ul>
+                        <!-- menu-submenu accordon-content-->
+                        <li id="nav3" class="toggle accordion-toggle">
+                            <span class="icon-plus"></span>
+                            <a class="menu-link" href="#">Menu3</a>
+                        </li>
+                        <!-- accordion-toggle -->
+                        <ul class="menu-submenu accordion-content">
+                            <li><a class="head" href="#">Submenu1</a></li>
+                            <li><a class="head" href="#">Submenu2</a></li>
+                            <li><a class="head" href="#">Submenu3</a></li>
+                            <li><a class="head" href="#">Submenu4</a></li>
+                        </ul>
+                        <!-- menu-submenu accordon-content-->
+                    </ul>
+                    <!-- menu-list accordion-->
+                </div>
+                <!-- menu-container -->
+            </div>
+            <div class="col_w3 flex-center-center">
+                <a href="/" class="main-logo flex-center-center">
+                    <img src="img/top-logo.png" alt="Logo company">
+                </a>
+            </div>
+            <div class="col_w3 flex-center-flexend">
+                <span href="#contact" class="header-contant">
+                    063 356 65 63 
+                </span>
+                <button class="call-back-mob">
+                    <img src="img/icons-phone.png" alt="">
+                </button>
+                <span class="call-back-header">Передзвонiть менi</span>
+                <div class="header-icon">
+                    <span class=" inst-header"></span>
+                    <span class=" fb-header"></span>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- /Header -->
+    <!-- First screen -->
+
+    <div class="first-screen">
+        <span class="firstscreen__white-line-top wow slideInDown" data-wow-duration="3s" data-wow-delay=".5s"></span>
+        <span class="firstscreen__white-line-bottom wow slideInUp" data-wow-duration="3s" data-wow-delay=".5s"></span>
+        <div class="flex_container flex-center-flexend mob-direction-column">
+            <div class="col_w2 first-screen-cursy marg-l-r-auto-1200">
+                <div class="cursy-img">
+                    <img src="./img/Text-copy.png" alt="">
+                </div>
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                    deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non
+                    provident, similique sunt in culpa.</p>
+                <a href="#" class="look-more">Детальніше</a>
+            </div>
+
+            <div class="col_w2 first-screen-form-wrapp">
+                <form class="first-screen-form marg-l-r-auto-1200">
+                    <h2 class="pinck-color mb-0">Отримайте безкоштовну консультацiю професiонала</h2>
+                    <h2 class="grey-color" style="margin-top: 5px!important;">Залишити заявку зустрiч</h2>
+                    <div class="form-body">
+                        <input type="text" required class="first-screen-form__name" placeholder="Ваше імя" name='name'>
+                        <div class="first-screen-form__wrap-input" style="margin-bottom: 22px">
+                            <input type="tel" required placeholder="Номер телефону" data-mask="+38 000 000 00 00">
+                            <input type="email" required placeholder="Email">
+                        </div>
+
+
+                        <input class="textarea" type="text" required name="textarea"
+                            placeholder="Ваші побажання"></input>
+
+                        <button class="first-screen-form__button">Записатись</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+        <div class="first-screen-main-servise">
+            <div class="col_w3">
+                <h3 class="main-servise__title">Оформлення<br> Весiлля</h3>
+                <a href="#" class="main-servise__button">Детальнiше</a>
+            </div>
+            <div class="col_w3 lr-border">
+                <h3 class="main-servise__title">Оформлення<br> Виiзноi церемонii</h3>
+                <a href="#" class="main-servise__button">Детальнiше</a>
+            </div>
+            <div class="col_w3">
+                <h3 class="main-servise__title">Весшльна<br> флористiка</h3>
+                <a href="#" class="main-servise__button">Детальнiше</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- First screen -->
+
+
+    <!-- Gallery -->
+    <div class="gallery">
+        <span class="gallery__red-line-top wow slideInLeft" data-wow-duration="3s" data-wow-delay=".5s"></span>
+        <span class="gallery__red-line-bottom"></span>
+        <span class="gallery__white-line-bottom wow slideInUp" data-wow-duration="3s" data-wow-delay=".5s"></span>
+
+        <h3 class="gallery__caption">ПОБАЧИТИ ТА ЗАКОХАТИСЬ</h3>
+        <h2 class="h2 grey-color text-align-center">Наша Галерея</h2>
+
+        <div class="gallery__container">
+            <div class="swiper-container swiper-container__multy">
+                <div class="swiper-wrapper">
+                    
+                <div class="swiper-slide">
+                    <div class="gallery-item">
+                        <div class="image-item fansy-item ">
+							<a href="img/gallery.png" data-lightbox="slidegallery" data-title="Курси декора">Курси декора</a>
+							<img src="img/gallery.png" alt="">
+                        </div>
+                        <div class="image-item fansy-item">
+							<a href="img/gallery.png" data-lightbox="slidegallery" data-title="Курси декора">Курси декора</a>
+							<img src="img/gallery.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="gallery-item">
+                        <div class="image-item fansy-item">
+							<a href="img/gallery.png" data-lightbox="slidegallery" data-title="Курси декора">Курси декора</a>
+							<img src="img/gallery.png" alt="">
+                        </div>
+                        <div class="image-item fansy-item">
+							<a href="img/gallery.png" data-lightbox="slidegallery" data-title="Курси декора">Курси декора</a>
+							<img src="img/gallery.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="gallery-item">
+                        <div class="image-item fansy-item">
+							<a href="img/gallery.png" data-lightbox="slidegallery" data-title="Курси декора">Курси декора</a>
+							<img src="img/gallery.png" alt="">
+                        </div>
+                        <div class="image-item fansy-item">
+							<a href="img/gallery.png" data-lightbox="slidegallery" data-title="Курси декора">Курси декора</a>
+							<img src="img/gallery.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="gallery-item">
+                        <div class="image-item fansy-item">
+							<a href="img/gallery.png" data-lightbox="slidegallery" data-title="Курси декора">Курси декора</a>
+							<img src="img/gallery.png" alt="">
+                        </div>
+                        <div class="image-item fansy-item">
+							<a href="img/gallery.png" data-lightbox="slidegallery" data-title="Курси декора">Курси декора</a>
+							<img src="img/gallery.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="gallery-item">
+                        <div class="image-item fansy-item">
+							<a href="img/gallery.png" data-lightbox="slidegallery" data-title="Курси декора">Курси декора</a>
+							<img src="img/gallery.png" alt="">
+                        </div>
+                        <div class="image-item fansy-item">
+							<a href="img/gallery.png" data-lightbox="slidegallery" data-title="Курси декора">Курси декора</a>
+							<img src="img/gallery.png" alt="">
+                        </div>
+                    </div>
+                </div>             
+                </div>
+            </div>
+            <div class="gallery-button-prev-next">
+                <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide"></div>
+                <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide"></div>
+            </div>            
+        </div>
+    </div>
+
+    <!-- Gallery end -->
+
+
+    <!-- Cursy section -->
+
+    <div class="cursy">
+        <h3 class="cursy__caption">ОТРИМАЙ МРIЮ</h3>
+        <h2 class="h2 text-align-center">Нашi послуги</h2>
+
+        <!-- Slider main container -->
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide cursy__container">
+                    <div class="card-curs">
+                        <div class="card-curs__img">
+                            <img src="img/layer-1.png" alt="">
+                        </div>
+                        <p class="card-curs__title">Весiльний декор</p>
+                        <p class="card-curs__date">Коротка iнформацiя про весiльний декор</p>
+                        <a href="#" class="card-curs__subscribe">Консультацiя</a>
+                    </div>
+                </div>
+                <div class="swiper-slide cursy__container">
+                    <div class="card-curs">
+                        <div class="card-curs__img">
+                            <img src="img/layer-1.png" alt="">
+                        </div>
+                        <p class="card-curs__title">Флоршстика</p>
+                        <p class="card-curs__date">Коротка iнформацiя про весiльний декор</p>
+                        <a href="#" class="card-curs__subscribe">Консультацiя</a>
+                    </div>
+                </div>
+                <div class="swiper-slide cursy__container">
+                    <div class="card-curs">
+                        <div class="card-curs__img">
+                            <img src="img/layer-1.png" alt="">
+                        </div>
+                        <p class="card-curs__title">Декор та виробництво</p>
+                        <p class="card-curs__date">Коротка iнформацiя про весiльний декор</p>
+                        <a href="#" class="card-curs__subscribe">Консультацiя</a>
+                    </div>
+                </div>
+                <div class="swiper-slide cursy__container">
+                    <div class="card-curs">
+                        <div class="card-curs__img">
+                            <img src="img/layer-1.png" alt="">
+                        </div>
+                        <p class="card-curs__title">Весiльний декор</p>
+                        <p class="card-curs__date">Коротка iнформацiя про весiльний декор</p>
+                        <a href="#" class="card-curs__subscribe">Консультацiя</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+
+
+    </div>
+
+    <!-- Cursy section end -->
+
+    <!-- after cursy -->
+    <div class="after-cursy">
+        <div class="after-cursy__container">
+                <span class="small firstscreen__white-line-top wow slideInDown" data-wow-duration="3s" data-wow-delay=".5s"></span>
+                <span class="small firstscreen__white-line-bottom wow slideInUp" data-wow-duration="3s" data-wow-delay=".5s"></span>
+            <div class="flex_container">
+                <div class="col_w2 flex-center-center marg-l-r-auto-1200">
+                    <div class="logotype-sentence"><img src="img/01.png" alt=""></div>
+                </div>
+                <div class="col_w2 marg-l-r-auto-1200">
+                        <div class="sentence">
+                            <h3 class="sentence-caption">ВАЩI ПЕРЕМОГИ </h3>
+                            <h2 class="h2-sentence grey-color">WedLemod - ващi мрii у реальностi</h2>
+                            <p class="grey-color">At vero eos et accusamus et iusto odio dignissimos ducimus qui </p>
+            
+                            <div class="sentence-container">
+                                <div class="sentence-container__item">
+                                    <div class="sentence-container__img">
+                                        <img src="img/1.png" alt="">
+                                    </div>
+                                    <div class="sentence-container__text">
+                                        <h3 class="sentence-title">Заснованi в 2014 роцi, 7 рокiв на ринку</h3>
+                                        <p class="grey-color">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                                    </div>
+                                </div>
+                                <div class="sentence-container__item">
+                                    <div class="sentence-container__img">
+                                        <img src="img/3.png" alt="">
+                                    </div>
+            
+                                    <div class="sentence-container__text">
+                                        <h3 class="sentence-title">Власний склад декору та посуду</h3>
+                                        <p class="grey-color">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="sentence-container">
+                                <div class="sentence-container__item">
+                                    <div class="sentence-container__img">
+                                        <div class="sentence-container__img">
+                                            <img src="img/2.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="sentence-container__text">
+                                        <h3 class="sentence-title">Власне вирабництво та декорацiя</h3>
+                                        <p class="grey-color">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                                    </div>
+                                </div>
+                                <div class="sentence-container__item">
+                                    <div class="sentence-container__img">
+                                        <img src="img/4.png" alt="">
+                                    </div>
+            
+                                    <div class="sentence-container__text">
+                                        <h3 class="sentence-title">Навчаемо декораторiв та проводимо рiзнi МК</h3>
+                                        <p class="grey-color">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                                    </div>
+                                </div>
+                            </div>
+            
+                        </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- after cursy end-->
+
+    <!-- subscribe -->
+
+    <div class="subscribe">
+        <div class="subscribe__container">
+            <div class="what-we-do">
+                <div class="what-we-do__img col_w2">
+                    <img src="img/layer888.png" alt="">
+                </div>
+                <div class="what-we-do__text col_w2">
+                    <h3 class="what-we-do__caption">ЩО МИ РОБИМО</h3>
+                    <h2 class="h2">Найсучаснiши технологii</h2>
+                    <p>Sed elit quam, iaculis sed semper sit amet, sollicitudin vitae Sed elit quam, iaculis sed semper
+                        sit amet, sollicitudin vitae
+                        Sed elit quam, iaculis sed semper sit amet, sollicitudin vitae
+                        Sed elit quam, iaculis sed semper sit amet, sollicitudin vitae
+                    </p>
+                    <a href="#" class="what-we-do__subscribe">ЗАПИСАТИСЯ</a>
+                </div>
+            </div>
+        </div>
+        <div class="subscribe__container">
+            <div class="what-we-do flex-direction-reverse">
+                <div class="what-we-do__img col_w2">
+                    <img src="img/layer8882.png" alt="">
+                </div>
+                <div class="what-we-do__text col_w2">
+                    <h3 class="what-we-do__caption">ЯК МИ ПРАЦЮЕМО</h3>
+                    <h2 class="h2">Задоволені клiенти та вiдгуки</h2>
+                    <p>Sed elit quam, iaculis sed semper sit amet, sollicitudin vitae Sed elit quam, iaculis sed semper
+                        sit amet, sollicitudin vitae Sed elit quam, iaculis sed semper sit amet, sollicitudin vitae Sed
+                        elit quam, iaculis sed semper sit amet, sollicitudin vitae Sed elit quam, iaculis sed semper sit
+                        amet, sollicitudin vitae </p>
+                    <a href="#" class="what-we-do__subscribe">ЗАПИСАТИСЯ</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- subscribe end -->
+
+    <!-- To order -->
+
+    <div class="to-order">
+            <span class="small firstscreen__white-line-top wow slideInDown" data-wow-duration="3s" data-wow-delay=".5s"></span>
+            <span class="small firstscreen__white-line-bottom wow slideInUp" data-wow-duration="3s" data-wow-delay=".5s"></span>
+        <div class="to-order__container">
+            <h2 class="h2 grey-color text-align-center">Отримати безкоштовну консультацiю</h2>
+            <h3 class="grey-color text-align-center">Subscribe our newsletter for get notification about new updates
+                Subscribe our
+                newsletter for get
+                notification about new updates</h3>
+            <form class="to-order__form">
+                <input type="tel" name="phone" required placeholder="Ваш телефон" data-mask="+38 000 000 00 00">
+                <button>ЗАПИСАТИСЯ</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- To order end-->
+
+    <!-- last news -->
+    <div class="last-news">
+        <h3 class="last-news__caption">БУДЬ У КУРСІ</h3>
+        <h2 class="h2 text-align-center">Останні Новини</h2>
+        <div class="last-news__cantainer">
+
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="last-news__item">
+                            <div class="last-news__item-img">
+                                <img src="img/last-news.png" alt="">
+                                <span></span>
+                            </div>
+                            <div class="last-news__item-info">
+                                <div class="item-info-data">
+                                    <span class="item-info-data__day">22</span></br>
+                                    <span class="item-info-data__mouns">Серпень</span></br>
+                                    <span class="item-info-data__year">2019</span>
+                                </div>
+                                <div class="news-item-text">
+                                    <h3 class="news-item-title">Новий тренд кольорі Pattone дивіться зараз!</h3>
+                                    <span class="news-item-line"></span>
+                                    <div class="news-item-tags">
+                                        <span>СВIТЛАНА . </span>
+                                        <span>ДЕКОР</span>
+                                    </div>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor perspiciatis
+                                        obcaecati
+                                    </p>
+                                    <a href="#" class="news-item__button">ДЕТАЛЬНІШЕ</a>
+                                </div>
+                            </div>
+                            <!-- Эта ссылка обварачивает весь item чтобы при клике на item был переход по ней -->
+                            <a href=""></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="last-news__item">
+                            <div class="last-news__item-img">
+                                <img src="img/last-news.png" alt="">
+                                <span></span>
+                            </div>
+                            <div class="last-news__item-info">
+                                <div class="item-info-data">
+                                    <span class="item-info-data__day">22</span></br>
+                                    <span class="item-info-data__mouns">Серпень</span></br>
+                                    <span class="item-info-data__year">2019</span>
+                                </div>
+                                <div class="news-item-text">
+                                    <h3 class="news-item-title">Новий тренд кольорі Pattone дивіться зараз!</h3>
+                                    <span class="news-item-line"></span>
+                                    <div class="news-item-tags">
+                                        <span>СВIТЛАНА . </span>
+                                        <span>ДЕКОР</span>
+                                    </div>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor perspiciatis
+                                        obcaecati
+                                    </p>
+                                    <a href="#" class="news-item__button">ДЕТАЛЬНІШЕ</a>
+                                </div>
+                            </div>
+                            <!-- Эта ссылка обварачивает весь item чтобы при клике на item был переход по ней -->
+                            <a href=""></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="last-news__item">
+                            <div class="last-news__item-img">
+                                <img src="img/last-news.png" alt="">
+                                <span></span>
+                            </div>
+                            <div class="last-news__item-info">
+                                <div class="item-info-data">
+                                    <span class="item-info-data__day">22</span></br>
+                                    <span class="item-info-data__mouns">Серпень</span></br>
+                                    <span class="item-info-data__year">2019</span>
+                                </div>
+                                <div class="news-item-text">
+                                    <h3 class="news-item-title">Новий тренд кольорі Pattone дивіться зараз!</h3>
+                                    <span class="news-item-line"></span>
+                                    <div class="news-item-tags">
+                                        <span>СВIТЛАНА . </span>
+                                        <span>ДЕКОР</span>
+                                    </div>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor perspiciatis
+                                        obcaecati
+                                    </p>
+                                    <a href="#" class="news-item__button">ДЕТАЛЬНІШЕ</a>
+                                </div>
+                            </div>
+                            <!-- Эта ссылка обварачивает весь item чтобы при клике на item был переход по ней -->
+                            <a href=""></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="last-news__item">
+                            <div class="last-news__item-img">
+                                <img src="img/last-news.png" alt="">
+                                <span></span>
+                            </div>
+                            <div class="last-news__item-info">
+                                <div class="item-info-data">
+                                    <span class="item-info-data__day">22</span></br>
+                                    <span class="item-info-data__mouns">Серпень</span></br>
+                                    <span class="item-info-data__year">2019</span>
+                                </div>
+                                <div class="news-item-text">
+                                    <h3 class="news-item-title">Новий тренд кольорі Pattone дивіться зараз!</h3>
+                                    <span class="news-item-line"></span>
+                                    <div class="news-item-tags">
+                                        <span>СВIТЛАНА . </span>
+                                        <span>ДЕКОР</span>
+                                    </div>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor perspiciatis
+                                        obcaecati
+                                    </p>
+                                    <a href="#" class="news-item__button">ДЕТАЛЬНІШЕ</a>
+                                </div>
+                            </div>
+                            <!-- Эта ссылка обварачивает весь item чтобы при клике на item был переход по ней -->
+                            <a href=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+    <!-- last news -->
+
+    <!-- Telefon section -->
+
+    <div class="telefon">
+            <span class="small firstscreen__white-line-top wow slideInDown" data-wow-duration="3s" data-wow-delay=".5s"></span>
+            <span class="small firstscreen__white-line-bottom wow slideInUp" data-wow-duration="3s" data-wow-delay=".5s"></span>
+        <h2 class="h2 white-color text-align-center">Хочете консультацію? Дзвоніть зараз!</h2>
+        <h3 class="h3_telefon white-color text-align-center">+38 063 555 55 55 </br>+38 095 555 55 55</h3>
+        <a href="#" id="telefon__button" class="telefon__button">ЗАМОВИТИ ДЗВІНОК</a>
+    </div>
+
+    <!-- Telefon section end-->
+
+    <div class="footer_wrapper">
+
+        <footer>
+            <div class="flex_container">
+                <div class="col_w3">
+                    <a href="#" class="footer-copy">Copyright 2019, Powered and Built by</br> SeoLabs</a>
+                </div>
+                <div class="col_w3">
+                    <p class="footer-text">Львів, Україна</br> +38 063 555 55 55</br> +38 095 555 55 55</p>
+                </div>
+                <div class="col_w3">
+                    <div class="footer-icon-container">
+                        <i class="twitter-icon"></i>
+                        <i class="facebook-icon"></i>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div id="my-popup" class="mfp-hide white-popup">
+            <form class="to-order__form">
+                <input type="tel" name="phone" required="" placeholder="Ваш телефон" data-mask="+38 000 000 00 00"
+                    autocomplete="off" maxlength="17">
+                <button>Замовити дзвiнок</button>
+            </form>
+        </div>
+
+    </div>
+    <script src="libs/js/jquery-3.3.1.min.js?v=1"></script>
+    <script src="libs/js/jquery.formstyler.min.js"></script>
+    <script src="libs/js/swiper.min.js?v=1"></script>
+    <script src="libs/js/jquery.mask.min.js"></script>
+    <script src="libs/js/jquery.magnific-popup.min.js"></script>
+    <script src="libs/js/simple-lightbox.min.js"></script>
+    <script src="libs/js//wow.min.js"></script>
+    <script src="js/common.js?v=2"></script>
+</body>
+
+</html>
