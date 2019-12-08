@@ -94,7 +94,10 @@ $(document).ready(function() {
   });
 
   $("select").styler();
-  $(".fansy-item a").simpleLightbox();
+  if ($(".fansy-item a") === true) {
+    $(".fansy-item a").simpleLightbox();
+  }
+
   new WOW().init();
 
   function slideMenu() {
