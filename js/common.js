@@ -19,7 +19,7 @@ $(document).ready(function() {
   function fixedHeader() {
     var newScroll = $(window).scrollTop();
 
-    if (newScroll > 300) {
+    if (newScroll > 100) {
       $("body").removeClass("overflow-hidden");
       $(".menu-list").removeClass("active");
 

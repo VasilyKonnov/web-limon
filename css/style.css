@@ -501,15 +501,6 @@ h2 {
   background: url(../img/layer884.png);
   background-size: cover;
 }
-.first-screen-inner {
-  position: relative;
-  max-height: 523px;
-  min-height: 377px;
-  /* padding: 162px 0 166px; */
-  background-size: cover;
-  background-position: center;
-  background: url(../img/first-screen-inner.png);
-}
 .firstscreen__white-line-top {
   display: block;
   position: absolute;
@@ -1274,8 +1265,8 @@ h2 {
 
 .subscribe {
   padding-top: 150px;
-  background: url(../img/lemon.png) 0 45px no-repeat,
-    url(../img/wed.png) 100% 100% no-repeat;
+  background: url(../img/lemon.png) 0 313px no-repeat,
+    url(../img/wed.png) 100% 83% no-repeat;
 }
 
 .subscribe__container {
@@ -1298,14 +1289,28 @@ h2 {
   letter-spacing: 8px;
   font-size: 16px;
 }
-
+.caption {
+  color: #ffaad2;
+  letter-spacing: 8px;
+  font-size: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+}
 .h2 {
   font-size: 48px;
   margin-bottom: 30px;
   color: #515151;
   line-height: 55px;
+  font-weight: 500;
 }
-
+.first-screen-inner__h2 {
+  font-size: 54px;
+  margin-bottom: 30px;
+  color: #515151;
+  line-height: 55px;
+  font-weight: 500;
+}
 .white-color {
   color: #fff;
 }
@@ -1533,14 +1538,17 @@ h2 {
 .item-info-data__day {
   font-size: 30px;
   margin-bottom: 13px;
+  font-weight: 600;
 }
 
 .item-info-data__mouns {
   font-size: 12px;
+  font-weight: 600;
 }
 
 .item-info-data__year {
   font-size: 12px;
+  font-weight: 600;
 }
 
 .news-item-text {
@@ -1549,7 +1557,7 @@ h2 {
 
 .news-item-title {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
   color: #515151;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -1575,7 +1583,7 @@ h2 {
 .news-item-tags {
   font-size: 13px;
   color: #515151;
-  font-weight: 500;
+  font-weight: 600;
 }
 .news-item-text p {
   color: #515151;
