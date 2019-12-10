@@ -124,6 +124,11 @@ body {
   width: 200px;
   text-align: center;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+.call-back-header:hover {
+  background-color: #c5397d;
+  transition: all 0.3s ease;
 }
 .header-icon {
   display: inline-block;
@@ -163,7 +168,12 @@ body {
   width: 21px;
 }
 .first-screen-cursy .look-more {
+  background-color: #ffaad2;
+  transition: all 0.5s ease;
+}
+.first-screen-cursy .look-more:hover {
   background-color: #c5397d;
+  transition: all 0.5s ease;
 }
 .menu-title {
   color: #515151;
@@ -627,7 +637,13 @@ h2 {
   border: 0;
   color: #fff;
   background-color: #ffaad2;
+  transition: all 0.3s ease;
   font-size: 16px;
+  cursor: pointer;
+}
+.first-screen-form .first-screen-form__button:hover {
+  transition: all 0.3s ease;
+  background-color: #c5397d;
 }
 .first-screen-form .textarea {
   background-color: transparent;
@@ -1327,9 +1343,14 @@ h2 {
   text-align: center;
 }
 
+.what-we-do__subscribe:hover {
+  background-color: #c5397d;
+  transition: all 0.3s ease;
+}
 .what-we-do__subscribe {
   display: block;
   background-color: #ffaad2;
+  transition: all 0.3s ease;
   color: #fff;
   font-size: 16px;
   padding: 11px;
@@ -1434,8 +1455,12 @@ h2 {
   margin: 35px auto 0;
   font-size: 16px;
   color: #fff;
+  transition: all 0.3s ease;
 }
-
+.to-order__form button:hover {
+  transition: all 0.3s ease;
+  background-color: #c5397d;
+}
 .swiper-container {
   max-width: 1320px;
   margin: 0 auto;
@@ -1599,6 +1624,11 @@ h2 {
   padding: 11px;
   max-width: 134px;
   margin-top: 35px;
+  transition: all 0.3s ease;
+}
+.news-item__button:hover {
+  background-color: #c5397d;
+  transition: all 0.3s ease;
 }
 
 .telefon {
@@ -1624,7 +1654,11 @@ h2 {
   cursor: pointer;
   margin: 35px auto 0;
   font-size: 16px;
-  color: #fff;
+  transition: all 0.3s ease;
+}
+.telefon__button:hover {
+  background-color: #c5397d;
+  transition: all 0.3s ease;
 }
 
 .h3_telefon {
