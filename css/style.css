@@ -424,6 +424,7 @@ h2 {
   padding-top: 0px;
   -webkit-transform: initial;
   transform: initial;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .show .flex_container .flex-center-center .main-logo {
   height: 60px !important;
