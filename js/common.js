@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
   function fixedWidth() {
     colWidth = $(".col").width();
     $(".review-fixed").css("width", colWidth);
@@ -23,8 +23,10 @@ $(document).ready(function() {
       $("body").removeClass("overflow-hidden");
       $(".menu-list").removeClass("active");
 
-      $("#menu-container .menu-list").css(
-        { left: "-100%", transition: "all .9s ease" },
+      $("#menu-container .menu-list").css({
+          left: "-100%",
+          transition: "all .9s ease"
+        },
         400
       );
 
@@ -57,7 +59,7 @@ $(document).ready(function() {
 
   fixedHeader();
 
-  $(window).on("scroll", function() {
+  $(window).on("scroll", function () {
     fixedHeader();
     fixedWidth();
     /*отзывы исправление скролла формы*/
@@ -84,12 +86,34 @@ $(document).ready(function() {
   var mySwiper = new Swiper(".swiper-container", {
     slidesPerView: slidesInWrapper,
     spaceBetween: 30,
-    slidesPerGroup: 1,
+    // slidesPerGroup: 1,
     loop: true,
     loopFillGroupWithBlank: true,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev"
+    }
+  });
+  var mySwiperReviews = new Swiper(".reviews-container", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    autoHeight: true,
+    // slidesPerGroup: 1,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    navigation: {
+      nextEl: ".reviews-button-next",
+      prevEl: ".reviews-button-prev"
+    }
+  });
+  var mySwiperServise = new Swiper(".swiper-container-servise", {
+    autoHeight: true, //enable auto height
+    spaceBetween: 20,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true
     }
   });
 
@@ -102,12 +126,13 @@ $(document).ready(function() {
 
   function slideMenu() {
     var activeState = $("#menu-container .menu-list").hasClass("active");
-    $("#menu-container .menu-list").animate(
-      { left: activeState ? "0%" : "-100%" },
+    $("#menu-container .menu-list").animate({
+        left: activeState ? "0%" : "-100%"
+      },
       300
     );
   }
-  $("#menu-wrapper").click(function(event) {
+  $("#menu-wrapper").click(function (event) {
     event.stopPropagation();
     $("#hamburger-menu").toggleClass("open");
     $("#menu-container .menu-list").toggleClass("active");
@@ -118,7 +143,7 @@ $(document).ready(function() {
 
   $(".menu-list")
     .find(".accordion-toggle")
-    .click(function() {
+    .click(function () {
       $(this)
         .next()
         .toggleClass("open")
@@ -139,13 +164,13 @@ $(document).ready(function() {
         .removeClass("active");
     });
 
-  $(".call-back-header").on("click", function(e) {
+  $(".call-back-header").on("click", function (e) {
     e.preventDefault();
     $.magnificPopup.close();
 
     var _this = $(this);
 
-    setTimeout(function() {
+    setTimeout(function () {
       $.magnificPopup.open({
         items: {
           src: "#my-popup",
@@ -154,13 +179,13 @@ $(document).ready(function() {
       });
     }, 500);
   });
-  $(".telefon__button").on("click", function(e) {
+  $(".telefon__button").on("click", function (e) {
     e.preventDefault();
     $.magnificPopup.close();
 
     var _this = $(this);
 
-    setTimeout(function() {
+    setTimeout(function () {
       $.magnificPopup.open({
         items: {
           src: "#my-popup",
@@ -169,13 +194,13 @@ $(document).ready(function() {
       });
     }, 500);
   });
-  $(".call-back-mob").on("click", function(e) {
+  $(".call-back-mob").on("click", function (e) {
     e.preventDefault();
     $.magnificPopup.close();
 
     var _this = $(this);
 
-    setTimeout(function() {
+    setTimeout(function () {
       $.magnificPopup.open({
         items: {
           src: "#my-popup",

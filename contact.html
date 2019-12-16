@@ -30,6 +30,7 @@
     <!-- Header -->
 
     <div id="header" class="header">
+
         <div class="flex_container">
             <div class="col_w3 flex-center-flexstart">
                 <div id="menu-container">
@@ -100,6 +101,7 @@
 
             </div>
         </div>
+
     </div>
 
     <!-- /Header -->
@@ -111,43 +113,57 @@
 
     <!-- First screen -->
 
-    <div class="subscribe">
-        <div class="subscribe__container">
-            <div class="what-we-do">
-                <div class="what-we-do__img col_w2">
-                    <img src="img/weare.png" alt="">
+    <div class="container">
+        <p class="text-align-center fw600 your-suggestion">Do you have anything in your mind to tell us? Please dont
+            hesitate to<br> get in touch to us via our contact form</p>
+        <div class="flex_container mob-grid-width mob910-flexdirec-colmn">
+            <div class="col_w3">
+                <div class="contact-info">
+                    <span class="icon-email"></span>
+                    <div class="contact-info__info">
+                        <p class="fw600">Email:</p>
+                        <p class="fw600">wedlimon@ukr.net</p>
+                    </div>
                 </div>
-                <div class="what-we-do__text col_w2">
-                    <h3 class="what-we-do__caption">ЩО МИ РОБИМО</h3>
-                    <h2 class="h2">Ти наречена, яка цiнить стиль i уникальнiсть</h2>
-                    <p>Sed elit quam, iaculis sed semper sit amet, sollicitudin vitae Sed elit quam, iaculis sed semper
-                        sit amet, sollicitudin vitae
-                        Sed elit quam, iaculis sed semper sit amet, sollicitudin vitae
-                        Sed elit quam, iaculis sed semper sit amet, sollicitudin vitae
-                    </p>
-                    <a href="#" class="what-we-do__subscribe">ЗАПИСАТИСЯ</a>
+            </div>
+            <div class="col_w3">
+                <div class="contact-info">
+                    <span class="icon-phone"></span>
+                    <div class="contact-info__info">
+                        <p class="fw600">Телефон:</p>
+                        <p class="fw600">+38 097 81 46 904</p class="fw600">
+                    </div>
+                </div>
+            </div>
+            <div class="col_w3">
+                <div class="contact-info">
+                    <span class="icon-location"></span>
+                    <div class="contact-info__info">
+                        <p class="fw600">Адреса:</p class="fw600">
+                        <p class="fw600">М.Львів вул. Залiзнична</p class="fw600">
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="subscribe__container">
-            <div class="what-we-do flex-direction-reverse">
-                <div class="what-we-do__img col_w2">
-                    <img src="img/weare1.png" alt="">
+
+        <div class="contact-form-container">
+            <h2 class="pinck-color mb-0">Отримайте безкоштовну консультацiю професiонала</h2>
+            <h2 class="grey-color" style="margin-top: 18px!important;">Залишити заявку зустрiч</h2>
+
+            <form class="contact-form">
+                <input type="text" required="" class="contact-form__name" placeholder="Ваше імя" name="name">
+                <div class="contact-form__wrap-input" style="margin-bottom: 22px">
+                    <input type="tel" required="" placeholder="Номер телефону" data-mask="+38 000 000 00 00"
+                        autocomplete="off" maxlength="17">
+                    <input type="email" required="" placeholder="Email">
                 </div>
-                <div class="what-we-do__text col_w2">
-                    <h3 class="what-we-do__caption">ЯК МИ ПРАЦЮЕМО</h3>
-                    <h2 class="h2">Хто ми?</h2>
-                    <p>Sed elit quam, iaculis sed semper sit amet, sollicitudin vitae Sed elit quam, iaculis sed semper
-                        sit amet, sollicitudin vitae Sed elit quam, iaculis sed semper sit amet, sollicitudin vitae Sed
-                        elit quam, iaculis sed semper sit amet, sollicitudin vitae Sed elit quam, iaculis sed semper sit
-                        amet, sollicitudin vitae </p>
-                    <h2 class="h2">Хто створюэ красу</br> Вашого свята?</h2>
-                    <p>Sed elit quam, iaculis sed semper sit amet, sollicitudin vitae Sed elit quam, iaculis sed semper
-                        sit amet, sollicitudin vitae Sed elit quam, iaculis sed semper sit amet, sollicitudin vitae Sed
-                        elit quam, iaculis sed semper sit amet, sollicitudin vitae Sed elit quam, iaculis sed semper sit
-                        amet, sollicitudin vitae </p>
-                </div>
-            </div>
+
+
+                <textarea class="textarea" type="text" required="" name="textarea"
+                    placeholder="Ваші побажання"></textarea>
+
+                <button class="first-screen-form__button">Залишити заявку</button>
+            </form>
         </div>
     </div>
 
