@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).ready(function() {
   function fixedWidth() {
     colWidth = $(".col").width();
     $(".review-fixed").css("width", colWidth);
@@ -23,7 +23,8 @@ $(document).ready(function () {
       $("body").removeClass("overflow-hidden");
       $(".menu-list").removeClass("active");
 
-      $("#menu-container .menu-list").css({
+      $("#menu-container .menu-list").css(
+        {
           left: "-100%",
           transition: "all .9s ease"
         },
@@ -59,7 +60,7 @@ $(document).ready(function () {
 
   fixedHeader();
 
-  $(window).on("scroll", function () {
+  $(window).on("scroll", function() {
     fixedHeader();
     fixedWidth();
     /*отзывы исправление скролла формы*/
@@ -71,22 +72,37 @@ $(document).ready(function () {
   //  Инициализация слайдера
 
   if ($(document).width() < 7440) {
-    slidesInWrapper = 4;
+    slidesIn = {
+      slidesInWrapper: 4,
+      slidesGallery: 3,
+      slidesLastNews: 3
+    };
   }
   if ($(document).width() < 1340) {
-    slidesInWrapper = 3;
+    slidesIn = {
+      slidesInWrapper: 3,
+      slidesGallery: 3,
+      slidesLastNews: 3
+    };
   }
   if ($(document).width() < 1120) {
-    slidesInWrapper = 2;
+    slidesIn = {
+      slidesInWrapper: 2,
+      slidesGallery: 2,
+      slidesLastNews: 2
+    };
   }
   if ($(document).width() < 600) {
-    slidesInWrapper = 1;
+    slidesIn = {
+      slidesInWrapper: 1,
+      slidesGallery: 1,
+      slidesLastNews: 1
+    };
   }
 
   var mySwiper = new Swiper(".swiper-container", {
-    slidesPerView: slidesInWrapper,
+    slidesPerView: slidesIn.slidesInWrapper,
     spaceBetween: 30,
-    // slidesPerGroup: 1,
     loop: true,
     loopFillGroupWithBlank: true,
     navigation: {
@@ -94,11 +110,33 @@ $(document).ready(function () {
       prevEl: ".swiper-button-prev"
     }
   });
+
+  var mySwiperGallery = new Swiper(".gallery-swiper-container", {
+    slidesPerView: slidesIn.slidesGallery,
+    spaceBetween: 0,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    }
+  });
+
+  var mySwiperLastNews = new Swiper(".swiper-last-news", {
+    slidesPerView: slidesIn.slidesLastNews,
+    spaceBetween: 0,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    }
+  });
+
   var mySwiperReviews = new Swiper(".reviews-container", {
     slidesPerView: 1,
     spaceBetween: 30,
     autoHeight: true,
-    // slidesPerGroup: 1,
     loop: true,
     loopFillGroupWithBlank: true,
     navigation: {
@@ -118,21 +156,21 @@ $(document).ready(function () {
   });
 
   $("select").styler();
-  if ($(".fansy-item a") === true) {
-    $(".fansy-item a").simpleLightbox();
-  }
+
+  // $(".fansy-item a").simpleLightbox(); - вынес в index.html был конфликт на внутренних страницах
 
   new WOW().init();
 
   function slideMenu() {
     var activeState = $("#menu-container .menu-list").hasClass("active");
-    $("#menu-container .menu-list").animate({
+    $("#menu-container .menu-list").animate(
+      {
         left: activeState ? "0%" : "-100%"
       },
       300
     );
   }
-  $("#menu-wrapper").click(function (event) {
+  $("#menu-wrapper").click(function(event) {
     event.stopPropagation();
     $("#hamburger-menu").toggleClass("open");
     $("#menu-container .menu-list").toggleClass("active");
@@ -143,7 +181,7 @@ $(document).ready(function () {
 
   $(".menu-list")
     .find(".accordion-toggle")
-    .click(function () {
+    .click(function() {
       $(this)
         .next()
         .toggleClass("open")
@@ -164,13 +202,13 @@ $(document).ready(function () {
         .removeClass("active");
     });
 
-  $(".call-back-header").on("click", function (e) {
+  $(".call-back-header").on("click", function(e) {
     e.preventDefault();
     $.magnificPopup.close();
 
     var _this = $(this);
 
-    setTimeout(function () {
+    setTimeout(function() {
       $.magnificPopup.open({
         items: {
           src: "#my-popup",
@@ -179,13 +217,13 @@ $(document).ready(function () {
       });
     }, 500);
   });
-  $(".telefon__button").on("click", function (e) {
+  $(".telefon__button").on("click", function(e) {
     e.preventDefault();
     $.magnificPopup.close();
 
     var _this = $(this);
 
-    setTimeout(function () {
+    setTimeout(function() {
       $.magnificPopup.open({
         items: {
           src: "#my-popup",
@@ -194,13 +232,13 @@ $(document).ready(function () {
       });
     }, 500);
   });
-  $(".call-back-mob").on("click", function (e) {
+  $(".call-back-mob").on("click", function(e) {
     e.preventDefault();
     $.magnificPopup.close();
 
     var _this = $(this);
 
-    setTimeout(function () {
+    setTimeout(function() {
       $.magnificPopup.open({
         items: {
           src: "#my-popup",

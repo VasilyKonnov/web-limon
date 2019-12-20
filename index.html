@@ -110,7 +110,12 @@
         <div class="flex_container flex-center-flexend mob-direction-column">
             <div class="col_w2 first-screen-cursy marg-l-r-auto-1200">
                 <div class="cursy-img">
-                    <img src="./img/Text-copy.png" alt="">
+                    <!-- <img src="./img/Text-copy.png" alt=""> -->
+                    <h1 class="h1">
+                        <span class="ferst-word-h1"><span>Львів, Україна</span>Cтудія</span> весільного
+                    </h1>
+                    <h2 class="h2">декору та флористики</h2>
+
                 </div>
                 <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
                     deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non
@@ -170,7 +175,7 @@
         <h2 class="h2 grey-color text-align-center">Наша Галерея</h2>
 
         <div class="gallery__container">
-            <div class="swiper-container swiper-container__multy">
+            <div class="gallery-swiper-container swiper-container swiper-container__multy">
                 <div class="swiper-wrapper">
 
                     <div class="swiper-slide">
@@ -395,8 +400,10 @@
     <div class="subscribe">
         <div class="subscribe__container">
             <div class="what-we-do">
-                <div class="what-we-do__img col_w2">
-                    <img src="img/layer888.png" alt="">
+                <div class="col_w2">
+                    <div class="what-we-do__img">
+                        <img src="img/layer888.png" alt="">
+                    </div>
                 </div>
                 <div class="what-we-do__text col_w2">
                     <h3 class="what-we-do__caption">ЩО МИ РОБИМО</h3>
@@ -412,8 +419,10 @@
         </div>
         <div class="subscribe__container">
             <div class="what-we-do flex-direction-reverse">
-                <div class="what-we-do__img col_w2">
-                    <img src="img/layer8882.png" alt="">
+                <div class="col_w2">
+                    <div class="what-we-do__img">
+                        <img src="img/layer8882.png" alt="">
+                    </div>
                 </div>
                 <div class="what-we-do__text col_w2">
                     <h3 class="what-we-do__caption">ЯК МИ ПРАЦЮЕМО</h3>
@@ -458,7 +467,7 @@
         <h2 class="h2 text-align-center">Останні Новини</h2>
         <div class="last-news__cantainer">
 
-            <div class="swiper-container">
+            <div class="swiper-container swiper-last-news">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="last-news__item">
@@ -633,6 +642,11 @@
     <script src="libs/js/jquery.magnific-popup.min.js"></script>
     <script src="libs/js/simple-lightbox.min.js"></script>
     <script src="libs/js//wow.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".fansy-item a").simpleLightbox();
+        });
+    </script>
     <script src="js/common.js?v=2"></script>
 </body>
 
