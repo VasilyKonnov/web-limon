@@ -1289,10 +1289,17 @@ h2 {
 }
 
 .image-item {
-  /* width: 320px;
-  height: 190px;
-  margin-bottom: 20px; */
+  margin-bottom: 0px;
   position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image-item::before {
+  content: "";
+  float: left;
+  padding-top: 61%;
 }
 
 .gallery .gallery__container .swiper-container .swiper-wrapper .swiper-slide .gallery-item .swiper-slide {
